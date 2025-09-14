@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: football-predictor-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7844584704:AAF6I6-SozsE7xJnrhbm4qWsoq6_huRn2jw
+      - key: FOOTBALL_API_KEY
+        value: 8d7fb4b3d6c149b08d5984b1b1e7f92c
+      - key: ODDS_API_KEY
+        value: 50204508c0f43538e808f51e0020e112
